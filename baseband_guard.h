@@ -33,7 +33,8 @@ static const char * const allowed_domain_substrings[] = {
 	"bspFwUpdate",
 	"u:r:vold:s0",
 	"kernel",
-	"tee"
+	"tee",
+	"u:r:ueventd:s0"
 };
 
 static const size_t allowed_domain_substrings_cnt = ARRAY_SIZE(allowed_domain_substrings);
