@@ -23,7 +23,7 @@ initialize_variables() {
     SECURITY_KCONFIG="$SECURITY_DIR/Kconfig"
     BBG_DIR="$GKI_ROOT/Baseband-guard"
     BBG_SYMLINK="$SECURITY_DIR/baseband-guard"
-    BBG_REPO="https://github.com/vc-teahouse/Baseband-guard"
+    BBG_REPO="https://github.com/AlexLiuDev233/Baseband-guard"
     SELINUX_MAKEFILE="$SECURITY_DIR/selinux/Makefile"
     PATCH_FILE="$BBG_DIR/sepatch.txt"
 }
@@ -56,7 +56,7 @@ setup_baseband_guard() {
               git fetch origin "$ref" || true
               git checkout -q "$ref"
           else
-              git checkout -q main || git checkout -q master || true
+              git checkout -q dev || git checkout -q master || true
               git pull --ff-only || true
           fi
         )
