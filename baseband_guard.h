@@ -45,5 +45,6 @@ static const char * const allowlist_names[] = {
 #endif
 	"dtbo", "vendor_boot",
 	"userdata", "cache", "metadata", "misc",
+	"vbmeta", "vbmeta_system", "vbmeta_vendor",
 };
 static const size_t allowlist_cnt = ARRAY_SIZE(allowlist_names);
