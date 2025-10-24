@@ -64,4 +64,17 @@ config BBG_DISABLE_SELINUX_PERMISSIVE
           But we recommand DON'T turn selinux off, so we keep it here.
           If unsure, leave this n. 
 
+config BBG_BLOCK_RECOVERY
+       bool "Enable Baseband Protection for Recovery Partition"
+       depends on BBG
+       default n
+       help
+          Enable protection for recovery partition to
+          prevent malicious scripts or programs
+          destroying, however this may cause failure
+          when flashing custom recs in Android system
+          (meaning that you'll only be able to flash
+          recovery partition image in fastbootd/
+          bootloader mode).
+          If unsure, leave this n.
 endmenu
